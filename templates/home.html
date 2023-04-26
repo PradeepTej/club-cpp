@@ -24,7 +24,6 @@
 <div class="col-md-6 mt-5 mb-5">
   <h3 class='display-4 mb-5'> Top Player  </h3>
   <div class="row bg-light">
-
     {% for top in tops %}
 
     <div class='col-md-4 player' style="padding-bottom:40px">
@@ -120,7 +119,42 @@
       <a class="btn btn-secondary" href="{% url 'match_new' %}" role="button">Add Match </a>
   </section>
 
+<div class="container">
+
+<h3 class='display-4 mb-5'>Runrate Calculater  </h3>
+<div class="text-center" id="result"></div>
+     <div class="input-field ">
+       <label for="num1">Total Runs</label>
+       <input class="form-control" type="number" id="num1">
+     </div>
+     <div class="input-field ">
+       <label for="num2">Total Overs</label>
+       <input class="form-control" type="number" id="num2">
+     </div>
+     <button class="btn btn-secondary mt-3" onclick="calculate()">Calculate Percentage</button>
+     
+</div>
+
 </main>
+
+
+
+<script>
+  
+function calculate() {
+ var num1 = document.getElementById("num1").value;
+ var num2 = document.getElementById("num2").value;
+ var result = document.getElementById("result");
+ if (num1 > 0) {
+   var percentage = num1 / num2 ;
+   result.innerHTML = "Current Runrate is : " + percentage.toFixed(2) + "%";
+ } else {
+   result.innerHTML = "Number 1 should be greater than 0";
+ }
+}
+
+
+</script>
 
 
 
