@@ -6,6 +6,7 @@ phases:
             python: 3.9
         commands:
             - pip install --upgrade pip
+            - pip install RunRate
         # Install dependencies needed for running the static analysis
             - pip install -r requirements.txt pylint
     pre_build:
