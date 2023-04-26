@@ -25,7 +25,7 @@ SECRET_KEY = '#f7d*xwrubva_(6w(q((uci_3@+_9!^4@usv&z+xc#whc^-$)$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ipl-cllud.ap-southeast-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['ipl-cllud.ap-southeast-1.elasticbeanstalk.com' , '127.0.0.1']
 
 
 # Application definition
