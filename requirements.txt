@@ -7,6 +7,5 @@ RunRate==0.0.5
 pytz==2022.7.1
 sqlparse==0.4.3
 pymysql
-boto3
 mysql-python
 requests
